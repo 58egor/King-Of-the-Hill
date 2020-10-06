@@ -75,8 +75,7 @@ public class control : MonoBehaviour, IBeginDragHandler,IDragHandler
     // Start is called before the first frame update
     void Start()
     {
-        float ratio = 1f * Screen.height / Screen.width;
-        score.SetNativeSize();
+        float ratio = 1f * Screen.height / Screen.width;        score.fontSize = score.fontSize * (Screen.width / 480);
         float ortSize = 100 / 200f;
         Camera.main.orthographicSize = ortSize;
         //transform.LookAt(sphere.transform);
