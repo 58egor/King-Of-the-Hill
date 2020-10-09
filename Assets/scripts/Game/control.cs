@@ -217,7 +217,6 @@ public class control : MonoBehaviour, IBeginDragHandler,IDragHandler
             }
             else
             {
-                directionChosen = false;
                 direction = new Vector2(0, 0);
             }
             
